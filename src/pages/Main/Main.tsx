@@ -10,22 +10,22 @@ const Main = () => {
         <div className={style.modes}>
             <Link to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="../../../public/reciepts.png" alt="reciepts"/>
+                    <img src="./public/reciepts.png" alt="reciepts"/>
                 </div>
             </Link>
             <Link to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="../../../public/duels.png" alt="duels"/>
+                    <img src="./public/duels.png" alt="duels"/>
                 </div>
             </Link>
             <Link to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="../../../public/rating.png" alt="rating"/>
+                    <img src="./public/rating.png" alt="rating"/>
                 </div>
             </Link>
             <Link to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="../../../public/ur_kitchen.png" alt="ur_kitchen"/>
+                    <img src="./public/ur_kitchen.png" alt="ur_kitchen"/>
                 </div>
             </Link>
         </div>
