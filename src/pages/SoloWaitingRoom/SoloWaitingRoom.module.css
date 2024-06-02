@@ -11,3 +11,34 @@
     padding-bottom: calc(100vh - 319px);
     overflow: hidden;
 }
+.picture{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.header{
+    padding-top: calc((100vh - 852px)/4 + 51px);
+    font-family: 'Pribambas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32.8544px;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+.counter{
+    font-family: 'Pribambas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc((100vh - 852px)/3 + 281.087px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
