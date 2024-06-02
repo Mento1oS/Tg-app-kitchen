@@ -10,6 +10,7 @@
             left;
     position: relative;
     padding-bottom: calc(100vh - 319px);
+    overflow: hidden;
 }
 .header {
     font-family: 'Pribambas';
