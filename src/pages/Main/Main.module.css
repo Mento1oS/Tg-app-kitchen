@@ -1,17 +1,23 @@
-.container{
+.container {
     height: 100vh;
     width: 100%;
     background-image: url("/public/main&solo_landing.png"), linear-gradient(to bottom, rgb(163, 93, 46), rgb(163, 93, 46));
     background-blend-mode: multiply;
     background-repeat: no-repeat, no-repeat;
     object-fit: cover;
-    background-position:
-            bottom left,
-            left;
+    background-position: bottom left,
+    left;
     position: relative;
     padding-bottom: calc(100vh - 319px);
     overflow: hidden;
+    &:after{
+        content: url("/public/left_bottom.svg");
+        position: absolute;
+        left: 0px;
+        top: 618.56px;
+    }
 }
+
 .header {
     font-family: 'Pribambas';
     cursor: default;
@@ -29,16 +35,44 @@
     color: #FFFFFF;
     text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.modes{
+
+.modes {
     display: flex;
     flex-wrap: wrap;
     gap: 6.73px;
     justify-content: center;
 }
-.mode{
-    flex-basis: calc(50% - 1em);
 
+.mode {
+    flex-basis: calc(50% - 1em);
     margin-bottom: 2px;
+    position: relative;
 }
+
+.link {
+    z-index: 30;
+    position: relative;
+
+    &:nth-of-type(4) {
+
+        &::after {
+            content: url("/public/potato_z.svg");
+            position: absolute;
+            right: 0px;
+            top: 142px;
+        }
+    }
+
+    &:nth-of-type(3) {
+
+        &::before {
+            content: url("/public/firstGroup.svg");
+            position: absolute;
+            right: -37px;
+            top: 159px;
+        }
+    }
+}
+
 
 

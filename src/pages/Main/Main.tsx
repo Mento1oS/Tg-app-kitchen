@@ -8,24 +8,24 @@ const Main = () => {
             Выберите режим игры
         </h1>
         <div className={style.modes}>
-            <Link to={'/solo'}>
+            <Link className={style.link} to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="/reciepts.png" alt="reciepts"/>
+                    <img src="/reciepts.png" className={style.mode_pic} alt="reciepts"/>
                 </div>
             </Link>
-            <Link to={'/solo'}>
+            <Link className={style.link} to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="/duels.png" alt="duels"/>
+                    <img src="/duels.png" className={style.mode_pic} alt="duels"/>
                 </div>
             </Link>
-            <Link to={'/solo'}>
+            <Link className={style.link} to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="/rating.png" alt="rating"/>
+                    <img src="/rating.png" className={style.mode_pic} alt="rating"/>
                 </div>
             </Link>
-            <Link to={'/solo'}>
+            <Link className={style.link} to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="/ur_kitchen.png" alt="ur_kitchen"/>
+                    <img src="/ur_kitchen.png" className={style.mode_pic} alt="ur_kitchen"/>
                 </div>
             </Link>
         </div>
