@@ -15,6 +15,7 @@
         left: 0px;
         top: -116px;
         z-index: 0;
+        height: calc((100vh - 852px) + 231px);
     }
 }
 
@@ -30,12 +31,12 @@
     line-height: 26px;
     margin: 0 auto;
     display: flex;
-    padding-top: 33px;
+    padding-top: calc((100vh - 852px)/3 + 33px);
     align-items: center;
     text-align: center;
     color: #000000;
     width: 160px;
-    padding-bottom: 468px;
+    padding-bottom: calc((100vh - 852px) + 468px);
     &::before {
         content: url("/public/left_sec.svg");
         position: absolute;
