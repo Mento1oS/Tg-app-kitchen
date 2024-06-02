@@ -4,10 +4,12 @@
     background-image: url("/public/main&solo_landing.png"), linear-gradient(to bottom, rgb(163, 93, 46), rgb(163, 93, 46));
     background-blend-mode: multiply;
     background-repeat: no-repeat, no-repeat;
+    object-fit: cover;
     background-position:
             bottom left,
             left;
     position: relative;
+    padding-bottom: calc(100vh - 319px);
 }
 .header {
     font-family: 'Pribambas';
