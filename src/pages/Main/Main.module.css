@@ -53,7 +53,7 @@
             &:before{
                 content: url("/public/left_bottom.svg");
                 position: absolute;
-                left: -1em;
+                left: calc(-1em - 6.73px);
                 top: 230px;
             }
         }
