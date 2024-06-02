@@ -19,6 +19,13 @@ a {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'VK Sans Display';
+  src: url('/public/VKSansDisplay-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #root {
   font-family: Pribambas;
   margin: 0 auto;

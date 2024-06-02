@@ -8,7 +8,7 @@ function SoloLanding(){
         Приготовь мне мясо по-французски
       </div>
       <div className={style.button}>
-        <SubmitButton text={'Я готов'} address={'/solo/game'}/>
+        <SubmitButton text={'Я готов'} address={'/solo/task'}/>
       </div>
     </div>
   </div>;

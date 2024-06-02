@@ -1,7 +1,21 @@
 /** @format */
+import style from "../SoloTask/SoloTask.module.css";
+import SubmitButton from "../SubmitButton/SubmitButton.tsx";
 
 const SoloTask = () => {
-  return <div>SoloTask</div>;
+    return <div className={style.container}>
+        <div className={style.image}>
+            <img className={style.image} src="/centre_third.svg" alt="grapes"/>
+        </div>
+        <div className={style.header}>Тебе необходимо выбрать
+            правильные ингредиенты для блюда, которое попросил шеф
+        </div>
+        <div className={style.description}>Чем больше правильных продуктов ты выберешь, тем выше будет твой рейтинг
+        </div>
+        <div className={style.button}>
+            <SubmitButton text={'Начать'} address={'/solo/game'}/>
+        </div>
+    </div>;
 };
 
 export default SoloTask;
