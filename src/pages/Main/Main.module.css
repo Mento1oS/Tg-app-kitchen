@@ -1,6 +1,14 @@
 .container{
-    height: 100%;
+    height: 400px;
     width: 100%;
-    background: rgb(163, 93, 46);
-    opacity: 0.4;;
+
+    background-image: url("/public/main&solo_landing.png"), linear-gradient(to bottom, rgb(163, 93, 46), rgb(163, 93, 46));
+    background-blend-mode: multiply;
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+            bottom left,
+            left;
+    position: relative;
 }
+
+
