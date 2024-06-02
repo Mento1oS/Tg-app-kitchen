@@ -1,0 +1,33 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("/public/background_second.png"), linear-gradient(to bottom, rgb(163, 93, 46), rgb(163, 93, 46));
+    background-blend-mode: multiply;
+    background-repeat: no-repeat, no-repeat;
+    object-fit: cover;
+    background-position: bottom left,
+    left;
+    position: relative;
+    padding-bottom: calc(100vh - 319px);
+    overflow: hidden;
+}
+
+.picture {
+    padding-top: 22px;
+}
+.ingredient{
+    padding-top: calc((100vh - 852px)/8 + 55px);
+    font-family: 'Pribambas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32.8544px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.votebar{
+    margin: 0 auto;
+    padding-top: 36px;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+}

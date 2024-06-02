@@ -12,6 +12,9 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+    &:hover{
+        border: 2px solid #EDEDED;
+    }
 }
 
 .text {
@@ -23,4 +26,7 @@
     font-weight: 400;
     font-size: 30.5747px;
     color: #FFFFFF;
+    &:hover{
+        color: #000000;
+    }
 }
