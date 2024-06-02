@@ -28,6 +28,7 @@
 .modes{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .mode{
     flex-basis: calc(50% - 1em);
