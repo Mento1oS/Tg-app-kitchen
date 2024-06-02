@@ -20,7 +20,7 @@ function App() {
   //   telegram.close();
   // }
 
-  return <div>
+  return <div className='app'>
     <Header/>
     <Routes>
       <Route index element={<Main/>}/>
