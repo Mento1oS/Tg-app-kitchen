@@ -28,10 +28,13 @@
 .modes{
     display: flex;
     flex-wrap: wrap;
+    gap: 6.73px;
     justify-content: center;
 }
 .mode{
     flex-basis: calc(50% - 1em);
+
+    margin-bottom: 2px;
 }
 
 
