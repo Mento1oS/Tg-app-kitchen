@@ -53,8 +53,8 @@
         &:after{
             content: url("/public/left_bottom.svg");
             position: absolute;
-            left: 0px;
-            top: 250px;
+            left: -1em;
+            top: 420px;
         }
     }
 
