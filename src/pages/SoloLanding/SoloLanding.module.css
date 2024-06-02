@@ -31,12 +31,12 @@
     line-height: 26px;
     margin: 0 auto;
     display: flex;
-    padding-top: calc((100vh - 852px)/3 + 33px);
+    padding-top: 33px;
     align-items: center;
     text-align: center;
     color: #000000;
     width: 160px;
-    padding-bottom: calc((100vh - 852px) + 468px);
+    padding-bottom: calc((100vh - 852px)/4 + 468px);
     &::before {
         content: url("/public/left_sec.svg");
         position: absolute;

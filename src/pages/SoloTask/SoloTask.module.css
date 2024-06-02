@@ -12,10 +12,10 @@
     overflow: hidden;
 }
 .image{
-    margin-top: calc((100vh - 852px)/3 + 30px);
+    margin-top: 30px;
     display: flex;
     justify-content: center;
-    max-height: calc((100vh - 852px) + 193.52px);
+    max-height: 193.52px;
     margin-bottom: 21px;
 }
 .header{
@@ -29,7 +29,7 @@
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: calc((100vh - 852px)/3 + 93.5px);
+    margin-bottom: calc((100vh - 852px)/6 + 93.5px);
 }
 .description{
     max-width: 231px;
