@@ -1,5 +1,5 @@
 .container{
-    /*height: 400px;*/
+    height: 100%;
     width: 100%;
     background-image: url("/public/main&solo_landing.png"), linear-gradient(to bottom, rgb(163, 93, 46), rgb(163, 93, 46));
     background-blend-mode: multiply;
@@ -11,6 +11,7 @@
 }
 .header {
     font-family: 'Pribambas';
+    cursor: default;
     max-width: 188px;
     font-style: normal;
     font-weight: 400;

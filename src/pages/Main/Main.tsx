@@ -10,7 +10,7 @@ const Main = () => {
         <div className={style.modes}>
             <Link to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="./reciepts.png" alt="reciepts"/>
+                    <img src="/reciepts.png" alt="reciepts"/>
                 </div>
             </Link>
             <Link to={'/solo'}>
@@ -20,12 +20,12 @@ const Main = () => {
             </Link>
             <Link to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="./rating.png" alt="rating"/>
+                    <img src="/rating.png" alt="rating"/>
                 </div>
             </Link>
             <Link to={'/solo'}>
                 <div className={style.mode}>
-                    <img src="./ur_kitchen.png" alt="ur_kitchen"/>
+                    <img src="/ur_kitchen.png" alt="ur_kitchen"/>
                 </div>
             </Link>
         </div>
