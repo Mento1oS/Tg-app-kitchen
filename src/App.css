@@ -9,8 +9,20 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: 'Pribambas';
+  src: url('/public/Pribambas-Regular.woff2') format('woff2'),
+  url('/public/Pribambas-Regular.woff') format('woff'),
+  url('/public/Pribambas-Regular.ttf') format('truetype'),
+  url('/public/Pribambas-Regular.eot') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #root {
+  font-family: Pribambas;
   margin: 0 auto;
   text-align: center;
+
 }
 

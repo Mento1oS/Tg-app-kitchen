@@ -1,7 +1,7 @@
 /** @format */
-
+import style from './SoloLanding.module.css'
 const SoloLanding = () => {
-  return <div>SoloLanding</div>;
+  return <div className={style.container}>SoloLanding</div>;
 };
 
 export default SoloLanding;

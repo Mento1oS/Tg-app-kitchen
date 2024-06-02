@@ -1,7 +1,6 @@
 .container{
-    height: 400px;
+    /*height: 400px;*/
     width: 100%;
-
     background-image: url("/public/main&solo_landing.png"), linear-gradient(to bottom, rgb(163, 93, 46), rgb(163, 93, 46));
     background-blend-mode: multiply;
     background-repeat: no-repeat, no-repeat;
@@ -9,6 +8,29 @@
             bottom left,
             left;
     position: relative;
+}
+.header {
+    font-family: 'Pribambas';
+    max-width: 188px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35.9227px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 23px;
+    padding-bottom: 44px;
+    color: #FFFFFF;
+    text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.modes{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mode{
+    flex-basis: calc(50% - 1em);
 }
 
 
