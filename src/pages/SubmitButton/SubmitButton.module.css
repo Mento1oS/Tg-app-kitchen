@@ -1,0 +1,26 @@
+.wrapper {
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: absolute;
+    min-width: 220px;
+    height: 68px;
+    background: #E74145;
+    border: 2px solid #FFFFFF;
+    box-shadow: -9.26683px 9.26683px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.text {
+    margin-top: -7px;
+    position: absolute;
+    width: 83px;
+    font-family: 'Pribambas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30.5747px;
+    color: #FFFFFF;
+}

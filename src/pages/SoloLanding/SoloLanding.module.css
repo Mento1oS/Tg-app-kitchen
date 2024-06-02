@@ -1,11 +1,58 @@
-.container{
-    /*height: 400px;*/
+.container {
+    height: 100vh;
     width: 100%;
     background-image: url("/public/main&solo_landing.png"), linear-gradient(to bottom, rgb(163, 93, 46), rgb(163, 93, 46));
     background-blend-mode: multiply;
     background-repeat: no-repeat, no-repeat;
-    background-position:
-            bottom right,
-            left;
+    background-position: bottom right,
+    left;
     position: relative;
+    padding-bottom: calc(100vh - 319px);
+    overflow: hidden;
+    &::before {
+        content: url("/public/center_sec.svg");
+        position: absolute;
+        left: 0px;
+        top: -116px;
+        z-index: 0;
+    }
+}
+
+.layers {
+    position: relative;
+}
+
+.task {
+    font-family: 'Pribambas';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.4413px;
+    line-height: 26px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 33px;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+    width: 160px;
+    padding-bottom: 468px;
+    &::before {
+        content: url("/public/left_sec.svg");
+        position: absolute;
+        left: 0px;
+        top: 40px;
+        z-index: 0;
+    }
+}
+.button{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::before {
+        content: url("/public/right_bottom_sec.png");
+        position: absolute;
+        right: 20px;
+        top: -40px;
+        z-index: 0;
+    }
 }
