@@ -10,12 +10,7 @@
     position: relative;
     padding-bottom: calc(100vh - 319px);
     overflow: hidden;
-    &:after{
-        content: url("/public/left_bottom.svg");
-        position: absolute;
-        left: 0px;
-        top: 618.56px;
-    }
+
 }
 
 .header {
@@ -52,6 +47,16 @@
 .link {
     z-index: 30;
     position: relative;
+
+    &:nth-of-type(1) {
+
+        &:after{
+            content: url("/public/left_bottom.svg");
+            position: absolute;
+            left: 0px;
+            top: 250px;
+        }
+    }
 
     &:nth-of-type(4) {
 
