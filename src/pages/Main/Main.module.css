@@ -29,6 +29,12 @@
     padding-bottom: 44px;
     color: #FFFFFF;
     text-shadow: -4px 4px 0px rgba(0, 0, 0, 0.25);
+    &:before {
+        content: url("/public/left_top.svg");
+        position: absolute;
+        left: 0px;
+        top: 54px;
+    }
 }
 
 .modes {
@@ -46,17 +52,34 @@
 }
 
 .link {
-    z-index: 30;
     position: relative;
 
     &:nth-of-type(3) {
-        div{
-            &:before{
+        div {
+            &:before {
                 content: url("/public/left_bottom.svg");
                 position: absolute;
-                left: calc(-1em - 6.73px);
+                left: -33px;
                 top: 230px;
             }
+        }
+    }
+
+    &:nth-of-type(2) {
+        &:before {
+            content: url("/public/right_top.svg");
+            position: absolute;
+            right: -33px;
+            top: -100px;
+        }
+    }
+
+    &:nth-of-type(1) {
+        &:before {
+            content: url("/public/left_mid.svg");
+            position: absolute;
+            left: -33px;
+            top: 0px;
         }
     }
 
@@ -67,6 +90,12 @@
             position: absolute;
             right: 0px;
             top: 142px;
+        }
+        &::before{
+            content: url("/public/right_bottom.svg");
+            position: absolute;
+            right: -33px;
+            top: -450px;
         }
     }
 
