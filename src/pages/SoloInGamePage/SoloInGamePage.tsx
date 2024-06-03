@@ -12,7 +12,8 @@ const SoloInGamePage = (props: {
 }) => {
     const params: Readonly<Params<string>> = useParams();
     const navigate = useNavigate();
-    const [timer, setTimer]:[number, Dispatch<SetStateAction<number>>] = useState(30)
+    const [timer, setTimer]:[number, Dispatch<SetStateAction<number>>] = useState(30);
+    const [sign, setSign]:[number, Dispatch<SetStateAction<number>>] = useState(1);
     const stage = params?.stage;
     const interval = useRef(0);
 
@@ -29,7 +30,7 @@ const SoloInGamePage = (props: {
     }
 
     const touchStartHandle = (e: TouchEvent):void => {
-            touchStart.current = e.touches[0].screenX;
+        touchStart.current = e.touches[0].screenX;
     }
     const touchEndHandle = (e: TouchEvent):void=> {
         touchEnd.current = e.changedTouches[0].screenX;
@@ -50,6 +51,7 @@ const SoloInGamePage = (props: {
 
     const onClick = (approved: boolean, answers: NonNullable<unknown>, setAnswers:Dispatch<SetStateAction<NonNullable<unknown>>>, stage:string) => {
         setAnswers({...answers, [stage]: approved});
+        setSign(approved?1:-1);
         setTimer(30);
         navigate(`/solo/game/${Number(stage)+1}`)
     }
@@ -57,7 +59,7 @@ const SoloInGamePage = (props: {
     const disapproveFunc = onClick.bind(null, false, props.answers, props.setAnswers, stage);
     const approveFunc = onClick.bind(null, true, props.answers, props.setAnswers, stage);
 
-    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x: window.innerWidth, transition:{duration:0.1}}} className={style.container}>
+    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x: sign * window.innerWidth, transition:{duration:0.1}}} className={style.container}>
         <div className={style.picture} onTouchStart={touchStartHandle} onTouchEnd={touchEndHandle}>
             <IngredientComponent timer={timer} picture={'/ingredient_pic.png'}/>
         </div>

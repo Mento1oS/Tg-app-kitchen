@@ -11,7 +11,7 @@ const SoloWaitingRoom = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCounter(counter - 1);
-            if(counter<=0){
+            if(counter<=1){
               navigate('/solo/game/1');
             }
         }, 1000);
