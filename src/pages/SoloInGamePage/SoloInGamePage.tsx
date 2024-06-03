@@ -3,7 +3,7 @@
 import style from './SoloIngamePage.module.css'
 import IngredientComponent from "../IngredientComponent/IngredientComponent.tsx";
 import ApprovePicture from "../ApprovePicture/ApprovePicture.tsx";
-import {Dispatch, SetStateAction, useEffect, useRef, useState} from "react";
+import {Dispatch, SetStateAction, useEffect, useRef, useState, TouchEvent} from "react";
 import {Params, useNavigate, useParams} from "react-router-dom";
 import { motion } from 'framer-motion';
 
@@ -16,31 +16,25 @@ const SoloInGamePage = (props: {
     const stage = params?.stage;
     const interval = useRef(0);
 
-    // const swipeComponent = useRef<HTMLDivElement>(null);
-    // const touchStart = useRef(0);
-    // const touchEnd = useRef(0);
-    //
-    // const checkDirection = ()=>{
-    //     if(touchStart.current > 20 + touchEnd.current){
-    //         disapproveFunc();
-    //     }
-    //     else if(touchEnd.current > 20 + touchStart.current){
-    //         approveFunc();
-    //     }
-    // }
-    //
-    // useEffect(() => {
-    //     const element: Element | null = swipeComponent.current;
-    //     if (element !== null) {
-    //         element.addEventListener('touchstart', (e: TouchEvent):void => {
-    //             touchStart.current = e.changedTouches[0].screenX;
-    //         });
-    //         element.addEventListener('touchend', function(e: TouchEvent):void {
-    //             touchEnd.current = e.changedTouches[0].screenX;
-    //             checkDirection();
-    //         });
-    //     }
-    // }, []);
+    const touchStart = useRef(0);
+    const touchEnd = useRef(0);
+
+    const checkDirection = ()=>{
+        if(touchStart.current > 20 + touchEnd.current){
+            disapproveFunc();
+        }
+        else if(touchEnd.current > 20 + touchStart.current){
+            approveFunc();
+        }
+    }
+
+    const touchStartHandle = (e: TouchEvent):void => {
+            touchStart.current = e.touches[0].screenX;
+    }
+    const touchEndHandle = (e: TouchEvent):void=> {
+        touchEnd.current = e.changedTouches[0].screenX;
+        checkDirection();
+    };
 
     useEffect(() => {
         interval.current = setInterval(() => {
@@ -63,8 +57,8 @@ const SoloInGamePage = (props: {
     const disapproveFunc = onClick.bind(null, false, props.answers, props.setAnswers, stage);
     const approveFunc = onClick.bind(null, true, props.answers, props.setAnswers, stage);
 
-    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth, transition:{duration:0.1}}} className={style.container}>
-        <div className={style.picture}>
+    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x: window.innerWidth, transition:{duration:0.1}}} className={style.container}>
+        <div className={style.picture} onTouchStart={touchStartHandle} onTouchEnd={touchEndHandle}>
             <IngredientComponent timer={timer} picture={'/ingredient_pic.png'}/>
         </div>
         <div className={style.ingredient}>свиная вырезка</div>
