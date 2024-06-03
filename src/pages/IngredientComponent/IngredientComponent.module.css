@@ -16,7 +16,6 @@
 
 .counter {
     position: absolute;
-    right: 0px;
     width: 54px;
     height: 54px;
     left: calc(50% - 54px/2 + 113.5px);
@@ -32,7 +31,7 @@
     border-radius: 13.5px;
     font-weight: 400;
     font-size: 37.3125px;
-    /*line-height: 40px;*/
+    line-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

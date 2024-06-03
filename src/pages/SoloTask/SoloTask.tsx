@@ -1,9 +1,10 @@
 /** @format */
+import { motion } from "framer-motion";
 import style from "../SoloTask/SoloTask.module.css";
 import SubmitButton from "../SubmitButton/SubmitButton.tsx";
 
 const SoloTask = () => {
-    return <div className={style.container}>
+    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth}} className={style.container}>
         <div className={style.image}>
             <img className={style.image} src="/centre_third.svg" alt="grapes"/>
         </div>
@@ -15,7 +16,7 @@ const SoloTask = () => {
         <div className={style.button}>
             <SubmitButton text={'Начать'} address={'/solo/game'}/>
         </div>
-    </div>;
+    </motion.div>;
 };
 
 export default SoloTask;

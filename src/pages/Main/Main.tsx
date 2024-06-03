@@ -1,9 +1,9 @@
 /** @format */
 import style from './Main.module.css'
 import {Link} from "react-router-dom";
-
+import {motion} from 'framer-motion';
 const Main = () => {
-    return <div className={style.container}>
+    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth}} className={style.container}>
         <h1 className={style.header}>
             Выберите режим игры
         </h1>
@@ -29,7 +29,7 @@ const Main = () => {
                 </div>
             </Link>
         </div>
-    </div>;
+    </motion.div>;
 }
 
 export default Main;
