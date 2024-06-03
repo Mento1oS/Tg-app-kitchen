@@ -65,12 +65,10 @@
     .container {
         &::before {
             left: calc((100vw - 393px)/2);
-            top: -116px;
-            z-index: 0;
             height: calc((100vh - 852px) + 231px);
         }
     }
     .task {
-        padding-bottom: calc(max((100vh - 852px) + 468px, (100vw - 393px)));
+        padding-bottom: calc(max((100vh - 852px)/5, (100vw - 393px)/5) + 468px);
     }
 }
