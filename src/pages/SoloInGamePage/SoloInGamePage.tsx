@@ -63,7 +63,7 @@ const SoloInGamePage = (props: {
     const disapproveFunc = onClick.bind(null, false, props.answers, props.setAnswers, stage);
     const approveFunc = onClick.bind(null, true, props.answers, props.setAnswers, stage);
 
-    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth}} className={style.container}>
+    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth, transition:{duration:0.1}}} className={style.container}>
         <div className={style.picture}>
             <IngredientComponent timer={timer} picture={'/ingredient_pic.png'}/>
         </div>

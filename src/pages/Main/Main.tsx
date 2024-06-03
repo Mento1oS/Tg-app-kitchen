@@ -3,7 +3,7 @@ import style from './Main.module.css'
 import {Link} from "react-router-dom";
 import {motion} from 'framer-motion';
 const Main = () => {
-    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth}} className={style.container}>
+    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth, transition:{duration:0.1}}} className={style.container}>
         <h1 className={style.header}>
             Выберите режим игры
         </h1>
