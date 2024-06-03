@@ -48,3 +48,8 @@
     display: flex;
     justify-content: center;
 }
+@media(width > 393px){
+    .description {
+        padding-bottom: calc(max((100vh - 852px)/6, (100vw - 393px)/5) + 30.5px);
+    }
+}
