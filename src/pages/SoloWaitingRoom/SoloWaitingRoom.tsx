@@ -17,7 +17,7 @@ const SoloWaitingRoom = () => {
         }, 1000);
         return () => clearInterval(interval);
     }, [counter]);
-    return <motion.div initial={{width: 0}} animate={{width:"100%"}} exit={{x:window.innerWidth, transition:{duration:0.1}}} className={style.container}>
+    return <motion.div initial={{opacity: 0}} animate={{opacity: 1}} exit={{opacity: 0}} className={style.container}>
         <div className={style.picture}>
             <DishPicture picture={'/dish_picture.png'}/>
         </div>

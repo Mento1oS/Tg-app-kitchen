@@ -15,6 +15,7 @@
     &:hover{
         background: #FFFFFF;
         border: 2px solid #EDEDED;
+        color: #000000;
     }
 }
 
