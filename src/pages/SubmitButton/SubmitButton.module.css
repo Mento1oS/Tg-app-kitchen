@@ -13,12 +13,12 @@
     justify-items: center;
     align-items: center;
     &:hover{
+        background: #FFFFFF;
         border: 2px solid #EDEDED;
     }
 }
 
 .text {
-    /*margin-top: -7px;*/
     position: absolute;
     width: 83px;
     font-family: 'Pribambas';
